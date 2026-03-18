@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Form Validation</title>
+
+<script>
+function validateForm() {
+
+var name = document.getElementById("name").value;
+var age = document.getElementById("age").value;
+var email = document.getElementById("email").value;
+var password = document.getElementById("password").value;
+
+var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+if (name == "") {
+alert("Name field cannot be empty");
+return false;
+}
+
+if (email == "") {
+alert("Email field cannot be empty");
+return false;
+}
+
+if (!emailPattern.test(email)) {
+alert("Please enter a valid email address");
+return false;
+}
+
+alert("Form submitted successfully!");
+return true;
+}
+</script>
+
+</head>
+
+<body>
+<center>
+<h1>User Registration Form</h1>
+
+<form onsubmit="return validateForm()">
+
+<label>Name:</label><br>
+<input type="text" id="name"><br><br>
+
+<label> Age:</label><br>
+<input type="number" id="age"><br><br>
+
+<label>Email:</label><br>
+<input type="text" id="email"><br><br>
+
+<label>Password:</label><br>
+<input type="password" id="password"><br><br>
+
+
+<input type="submit" value="Submit">
+
+</form>
+</center>
+
+</body>
+</html>

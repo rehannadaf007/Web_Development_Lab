@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Form</title>
+</head>
+<body>
+
+    <h1 align="center"><u>Registration Form</u></h1>
+
+    <form action="success.html" method="get">
+        <p><b>Name:</b> <input type="text" name="name" required></p>
+
+        <p><b>Email:</b> <input type="email" name="email" required></p>
+
+        <p><b>Password:</b> <input type="password" name="password" required></p>
+
+        <p><b>Gender:</b><br>
+           <input type="radio" name="gender" value="Male" required> Male<br>
+           <input type="radio" name="gender" value="Female" required> Female<br>
+           <input type="radio" name="gender" value="Other" required> Other
+        </p>
+
+        <p><b>Address:</b><br>
+           <textarea name="address" rows="4" cols="50" required></textarea>
+        </p>
+
+        <p><b>Course:</b> <input type="text" name="course" required></p>
+
+        <p><b>Hobbies:</b></p>
+        
+            <input type="checkbox" name="hobbies" value="Programming"> Programming
+            <input type="checkbox" name="hobbies" value="Reading Technical Blogs"> Reading Technical Blogs
+            <input type="checkbox" name="hobbies" value="Listening to Music"> Listening to Music
+            <input type="checkbox" name="hobbies" value="Playing Cricket"> Playing Cricket
+        
+
+        <p><b>Contact Information:</b></p>
+        <p>
+            <b>Email:</b> <input type="email" name="contact_email" required><br>
+            <b>Mobile:</b> <input type="tel" name="mobile" required>
+        </p>
+
+        <p><input type="submit" value="Register"></p>
+    </form>
+
+</body>
+</html>
+
